@@ -11,6 +11,27 @@ Projeto acadêmico da disciplina **Projeto de Análise e Fluxo de Dados - OLAP e
 - Ambiente virtual Python: `venv` (`.venv`)
 - Runner inicial planejado para os primeiros testes: DirectRunner
 
+## Estrutura do projeto
+
+```text
+apache-beam-seminario/
+├── data/                  # Dados utilizados nas demonstrações
+├── src/                   # Código-fonte e pipeline mínimo
+├── demos/
+│   ├── batch/             # Demonstração de processamento batch
+│   └── streaming/         # Demonstração de processamento streaming
+├── docs/
+│   ├── pesquisa/          # Fundamentação teórica e materiais de pesquisa
+│   └── arquitetura/       # Diagramas e documentação da arquitetura
+├── slides/                # Arquivos da apresentação
+├── README.md              # Documentação principal do projeto
+├── requirements.txt       # Dependências diretas
+├── requirements-lock.txt  # Versões exatas do ambiente validado
+└── .gitignore             # Arquivos e pastas não versionados
+```
+
+Enquanto algumas pastas ainda não possuem conteúdo definitivo, é utilizado um arquivo `.gitkeep` para manter a estrutura versionada no GitHub. Esses arquivos podem ser removidos quando arquivos reais forem adicionados às respectivas pastas.
+
 ## Preparação do ambiente
 
 ### 1. Verificar a instalação do Python
@@ -134,17 +155,33 @@ __pycache__/
 *.pyc
 ```
 
-Dessa forma, o ambiente virtual e arquivos temporários do Python não são versionados.
+Dessa forma, o ambiente virtual e os arquivos temporários do Python não são versionados.
 
 ## Teste de replicabilidade
 
-Para validar a preparação do ambiente, outro integrante do grupo deverá conseguir, em outro computador:
+O teste de replicabilidade foi **concluído com sucesso em outro computador**.
+
+O segundo ambiente conseguiu:
 
 1. obter o projeto;
 2. criar a própria `.venv`;
 3. ativar o ambiente virtual;
 4. instalar as dependências com `requirements.txt`;
 5. importar o Apache Beam;
-6. obter a versão `2.76.0` no teste de validação.
+6. confirmar a versão `2.76.0` no teste de validação.
 
-A Tarefa 1 da Fase 1 será considerada concluída após esse teste de replicabilidade.
+Com essa validação, a **Tarefa 1 da Fase 1 foi concluída**.
+
+## Versionamento e colaboração
+
+O projeto está versionado no GitHub e organizado para que os integrantes possam trabalhar nas próximas etapas sem compartilhar a pasta `.venv`.
+
+As próximas contribuições deverão ser adicionadas às pastas correspondentes:
+
+- `src/`: pipeline mínimo e demais códigos-fonte;
+- `data/`: arquivos de entrada utilizados nas demonstrações;
+- `demos/batch/`: demonstração de processamento batch;
+- `demos/streaming/`: demonstração de processamento streaming;
+- `docs/pesquisa/`: pesquisa e fundamentação teórica;
+- `docs/arquitetura/`: materiais e diagramas de arquitetura;
+- `slides/`: apresentação do seminário.
