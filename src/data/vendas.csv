@@ -1,0 +1,19 @@
+data,produto,categoria,quantidade,preco
+2026-10-01,Notebook,Eletronicos,2,3500.00
+2026-10-01,Mouse,Perifericos,5,100.00
+2026-10-01,Teclado,Perifericos,3,150.00
+2026-10-02,Monitor,Eletronicos,3,1200.00
+2026-10-02,Webcam,Perifericos,4,250.00
+2026-10-02,Headset,Perifericos,2,300.00
+2026-10-03,SSD 1TB,Eletronicos,2,450.00
+2026-10-03,Hub USB,Acessorios,5,120.00
+2026-10-03,Cabo HDMI,Acessorios,6,50.00
+2026-10-04,Notebook,Eletronicos,1,3500.00
+2026-10-04,Mouse,Perifericos,3,100.00
+2026-10-04,Suporte Notebook,Acessorios,2,180.00
+2026-10-05,Monitor,Eletronicos,2,1200.00
+2026-10-05,Teclado,Perifericos,2,150.00
+2026-10-05,Adaptador USB-C,Acessorios,4,90.00
+2026-10-06,Cabo USB,Acessorios,0,40.00
+2026-10-06,Webcam,Perifericos,2,-250.00
+2026-10-06,,Acessorios,1,50.00
