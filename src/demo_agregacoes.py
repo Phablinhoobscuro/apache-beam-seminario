@@ -28,8 +28,6 @@ def main():
     with beam.Pipeline() as pipeline:
         vendas_validas = ler_vendas_validas(pipeline)
 
-        # Calcula uma única vez e reutiliza a mesma PCollection
-        # tanto no terminal quanto no arquivo CSV.
         faturamento_categoria = faturamento_por_categoria(vendas_validas)
 
         faturamento_categoria | "Exibir faturamento por categoria" >> beam.Map(
@@ -61,8 +59,8 @@ def main():
             lambda par: print(f"Qtd. de vendas | {par[0]}: {par[1]}")
         )
 
-    arquivo_saida = PREFIXO_SAIDA_CSV.with_suffix(".csv")
-    print(f"Arquivo CSV gerado: {arquivo_saida}")
+    arquivo_csv = PREFIXO_SAIDA_CSV.with_suffix(".csv")
+    print(f"Arquivo CSV gerado: {arquivo_csv}")
 
 
 if __name__ == "__main__":

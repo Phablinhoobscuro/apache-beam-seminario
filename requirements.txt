@@ -1,1 +1,2 @@
 apache-beam==2.76.0
+matplotlib==3.11.0
